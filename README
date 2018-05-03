@@ -1,0 +1,7 @@
+### Description
+45.32.50.147
+Install kubernetes cluster with ansible
+
+### USAGE
+
+ansible-playbook -i hosts main.yml
