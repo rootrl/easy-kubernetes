@@ -1,0 +1,12 @@
+---
+ - hosts: server
+   remote_user: root
+   tasks:
+   - name: "ping"
+     ping:
+   - name: "init"
+     script: "scripts/init.sh"
+   - name: "etc"
+     script: "scripts/etc.sh"
+     register: etcd
+   - debug: msg={{etcd.stdout_lines}}
