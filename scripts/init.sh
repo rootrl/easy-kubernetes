@@ -4,6 +4,6 @@ systemctl stop firewalld.service
 
 yum update -y
 
-yum install git -y
+yum install -y git vim net-tools.x86_64
 
 yum install gcc gcc-c++ kernel-devel -y

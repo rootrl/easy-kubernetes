@@ -6,7 +6,9 @@
      ping:
    - name: "init"
      script: "scripts/init.sh"
-   - name: "etc"
-     script: "scripts/etc.sh"
+   - name: "go env"
+     script: "scripts/go.sh"
+   - name: "etcd"
+     script: "scripts/etcd.sh"
      register: etcd
    - debug: msg={{etcd.stdout_lines}}
